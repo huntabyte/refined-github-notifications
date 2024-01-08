@@ -6,11 +6,15 @@ Enhances the GitHub Notifications page, making it more productive and less noisy
 
 ## Introduction
 
-Check [Anthony's Talk](https://youtu.be/gu-0b6KCf80) or the [Transcripts](https://antfu.me/posts/manage-github-notifcations-2023) to learn more about the philosophy and motivations behind this userscript.
+This is a fork of [@antfu](https://github.com/antfu)'s userscript [refined-github-notifications](https://github.com/antfu/refined-github-notifications) customized to my needs.
+
+If you want to learn more about the philosophy and motivations behind this userscript, check [Anthony's Talk](https://youtu.be/gu-0b6KCf80) or the [Transcripts](https://antfu.me/posts/manage-github-notifcations-2023).
 
 ## Features
 
 > **Note**: It's pretty opinionated. I'd encourage you to fork and customize it to your own needs.
+
+Anthony's original features:
 
 - Add `target="_blank"` to all notifications (and remove `notification_referrer_id`)
 - Refresh the page when going back to the tab, so you get the latest notifications
@@ -21,7 +25,7 @@ Check [Anthony's Talk](https://youtu.be/gu-0b6KCf80) or the [Transcripts](https:
   - The issue/PR is closed/merged, and you already read it
   - PRs created by Renovate, if not participating
   - New commits pushed to PRs
-  - *Notifications you have bookmarked will be bypassed
+  - \*Notifications you have bookmarked will be bypassed
 - Make sure only one notification tab is opened
 - When going to the issue from the notification, inject a floating button to mark it as done and close the tab.
 - `Alt/Option + X` to mark a notification as done and close it
@@ -32,17 +36,10 @@ Check [Anthony's Talk](https://youtu.be/gu-0b6KCf80) or the [Transcripts](https:
 When using "Detail Preview" feature, GitHub token would be better to provide to avoid rate limit. You can set the token by running the following command in the console of any page on GitHub:
 
 ```ts
-localStorage.setItem('github_token', 'your token')
+localStorage.setItem("github_token", "your token");
 ```
-
-## Sponsors
-
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
-  </a>
-</p>
 
 ## License
 
+[MIT](./LICENSE) License © 2024 [Hunter Johnston](https://github.com/huntabyte)
 [MIT](./LICENSE) License © 2023 [Anthony Fu](https://github.com/antfu)

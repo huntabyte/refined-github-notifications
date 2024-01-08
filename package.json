@@ -1,45 +1,49 @@
 {
-  "name": "refined-github-notifications",
-  "type": "module",
-  "version": "0.6.5",
-  "private": true,
-  "packageManager": "pnpm@8.5.1",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
-  "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/refined-github-notifications#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/antfu/refined-github-notifications.git"
-  },
-  "bugs": "https://github.com/antfu/refined-github-notifications/issues",
-  "scripts": {
-    "lint": "eslint .",
-    "release": "bumpp -x \"node bump.js\" --all"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^0.39.1",
-    "@antfu/ni": "^0.21.3",
-    "@antfu/utils": "^0.7.2",
-    "@octokit/core": "^4.2.1",
-    "@octokit/rest": "^19.0.11",
-    "@types/node": "^18.16.13",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.41.0",
-    "esno": "^0.16.3",
-    "lint-staged": "^13.2.2",
-    "octokit": "^2.0.16",
-    "pnpm": "^8.5.1",
-    "rimraf": "^5.0.1",
-    "simple-git-hooks": "^2.8.1",
-    "typescript": "^5.0.4",
-    "unbuild": "^1.2.1",
-    "vite": "^4.3.8"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
-  }
+	"name": "refined-github-notifications",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"packageManager": "pnpm@8.5.1",
+	"author": "Anthony Fu <anthonyfu117@hotmail.com> & Hunter Johnston <hello@huntabyte.com>",
+	"license": "MIT",
+	"funding": "https://github.com/sponsors/antfu",
+	"homepage": "https://github.com/antfu/refined-github-notifications#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/antfu/refined-github-notifications.git"
+	},
+	"bugs": "https://github.com/antfu/refined-github-notifications/issues",
+	"scripts": {
+		"lint": "eslint .",
+		"release": "bumpp -x \"node bump.js\" --all"
+	},
+	"devDependencies": {
+		"@antfu/ni": "^0.21.3",
+		"@antfu/utils": "^0.7.2",
+		"@octokit/core": "^4.2.1",
+		"@octokit/rest": "^19.0.11",
+		"@types/node": "^18.16.13",
+		"bumpp": "^9.1.0",
+		"eslint": "^8.56.0",
+		"esno": "^0.16.3",
+		"lint-staged": "^13.2.2",
+		"octokit": "^2.0.16",
+		"pnpm": "^8.5.1",
+		"prettier": "^3.1.1",
+		"prettier-plugin-eslint": "^1.0.2",
+		"rimraf": "^5.0.1",
+		"simple-git-hooks": "^2.8.1",
+		"typescript": "^5.0.4",
+		"unbuild": "^1.2.1",
+		"vite": "^4.3.8"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "pnpm lint-staged"
+	},
+	"lint-staged": {
+		"*": "eslint --fix"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.18.0"
+	}
 }
