@@ -1,5 +1,5 @@
 {
-	"name": "refined-github-notifications",
+	"name": "@huntabyte/refined-github-notifications",
 	"type": "module",
 	"version": "0.0.1",
 	"private": true,
